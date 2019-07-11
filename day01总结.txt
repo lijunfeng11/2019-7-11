@@ -1,0 +1,211 @@
+1 阐述Java的应用平台?
+	JAVASE : 标准版 
+	JAVAME : 小型版
+	JAVAEE : 企业版
+
+2 阐述Java语言跨平台的原理
+	JVM可以保证java语言的扩平台
+	
+
+3 独立完成Java开发环境的搭建(下载\安装\环境变量的配置)
+	下载 :
+	安装 : 安装目录不能有空格或者中文
+	环境变量的配置 : 可以在任意的目录下访问jdk下的指令
+
+4 独立完成Eclipse的环境搭建
+	Eclipse属于绿色版软件 : 解压完直接就可以使用
+
+5 独立编写HelloWorld案例并运行
+	自己练!
+
+6 独立完成Eclipse工作空间的配置
+	不用记 !  看文档
+	A:行号的显示和隐藏
+		显示：在代码区域的最左边的空白区域，右键 -- Show Line Numbers即可。
+		隐藏：把上面的动作再做一次。
+			
+	B:字体大小及颜色
+		a:Java代码区域的字体大小和颜色：
+			window -- Preferences -- General -- Appearance -- Colors And Fonts -- Java -- Java Edit Text Font
+		b:控制台
+			window -- Preferences -- General -- Appearance -- Colors And Fonts -- Debug -- Console font
+		c:其他文件
+			window -- Preferences -- General -- Appearance -- Colors And Fonts -- Basic -- Text Font
+			
+	D:控制台找不到了，怎么办?
+		Window--Show View—Console
+	
+	C:窗体给弄乱了，怎么办?
+		window -- Perspective -- Reset Perspective
+
+7 独立完成Eclipse中项目的删除和导入
+	不需要背
+
+	A:删除项目
+		选中项目 – 右键 – 删除
+			从项目区域中删除
+			从硬盘上删除
+	B:导入项目
+		在项目区域右键找到import
+		找到General，展开，并找到
+		Existing Projects into Workspace
+		点击next,然后选择你要导入的项目
+		
+		注意：这里选择的是项目名称
+
+
+8 阐述注释的概述和分类并在代码中测试
+
+	注释的概述 : 用来解释说明程序的文字
+	注释好处 : 提高代码的阅读性
+	注释的分类 : 
+		1 单行注释   // 注释的内容
+		2 多行注释	 /*  注释的内容 */
+		3 文档注释   /**  注释的内容 */
+		
+	注释的注意事项 : 注释不参与程序的运行
+
+9 阐述Java中关键字的含义及特点
+	关键字 : 被java赋予了特定含义的英文单词
+	关键字特点 : 1 全部小写  2 在常见的开发工具中有特定颜色
+
+10 阐述常量的概念及分类,并编写代码测试
+	
+	常量的概念 :程序在运行过程中,其值不可发生改变的量叫做常量
+	常量的分类 :
+		A 字面值常量
+			1 字符串常量  "hello"
+			2 整数常量  123
+			3 小数常量  12.12
+			4 字符常量  'a'
+			5 布尔常量  true  , false
+			6 空常量  	null
+	
+		B 自定义常量
+			final 数据类型 变量名 = 初始化值;
+
+11 阐述变量的概念及定义格式
+	概述 : 在程序运行过程中,其值可以在某个范围内发生改变的量叫做变量
+	
+	变量的格式 :  数据类型 变量名 = 初始化值;  ****
+
+12 阐述Java中数据类型的概述和分类
+
+	数据类型的概述 :  java属于强类型语言 , 每一种数据都有明确的数据类型
+	数据类型分类  : 
+		A : 基本数据类型 : 四类八种
+				整数类型 byte,short,int,long
+				浮点类型 float , double 
+				字符类型 char 
+				布尔类型 boolean
+		B : 引用数据类型 : 数组, 类 , 接口...
+
+13 阐述标识符的组成规则和注意事项
+	标识符 : 给项目,包,类,方法,变量...起名字的符号
+	标识符的组成规则 : a-z  A-Z  0-9  汉字(不推荐)  _  $ 
+	
+	起名子规范 : 了解!
+		A 小驼峰  : 变量 , 方法
+ *  		一个单词全部小写 , 两个单词以上从第二个单词开始首字母需要大写
+ *  		int number = 10; 		int maxNumber = 20;		
+ *  	B 大驼峰 : 类 , 接口
+ *  		每个单词首字母都需要大写
+ *  		HelloWorld	
+ * 		C 包 
+ * 			域名倒写, 每个单词全部小写
+ * 			com.baidu
+ * 
+ * 		D 自定义常量
+ * 			每个单词全部大写, 并且多个单词之间用下划线分割开
+ * 			NUMBER   MAX_NUMBER
+	
+	注意事项 : 
+		1 起名字不能是java中关键字
+		2 起名字不能以数字开头
+
+14 独立编写测试变量定义和使用的案例
+	
+	public class Demo1{
+		public static void main(String[] args){
+			// byte
+			byte b = 10;
+			System.out.println(b);
+			
+			System.out.println("-------");
+			
+			// short 
+			short s = 20;
+			System.out.println(s);
+			
+			System.out.println("-------");
+			
+			// int 
+			int i = 30;
+			System.out.println(i);
+			
+			System.out.println("-------");
+			
+			// long 
+			long l = 1000L;
+			System.out.println(l);
+			
+			System.out.println("-------");
+			
+			//float 
+			float f = 12.12F;
+			System.out.println(f);
+			
+			System.out.println("-------");
+			
+			// double 
+			double d = 13.13;
+			System.out.println(d);
+			
+			System.out.println("-------");
+			
+			// char
+			char c = 'a';
+			System.out.println(c);
+			
+			System.out.println("-------");
+			
+			// boolean
+			boolean bb = true;
+			System.out.println(bb);
+			
+			System.out.println("-------");
+		
+		}
+	}
+
+	
+
+15 独立编写测试变量定义的注意事项的案例
+
+	注意事项 :
+		1 变量(局部变量)在使用前必须给初始化值
+		2 同一个大括号内变量名不能重复
+		3 变量的使用范围,在它所在的那对大括号内
+		4 一行内可以定义多个变量(了解)
+		5 定义long类型变量数据后建议加L , 定义float类型变量数据后建议加F
+
+
+16 独立编写测试隐式类型转换的案例
+
+	类型转换
+		1 隐式转换(自动类型提升)
+			不能类型数据作运算会产生类型提升 
+			类型提升的规则 : byte,short,char->int->long->float->double
+		2 强制转换
+			把取值范围大的数据赋值给小的范围的类型才会涉及到强制转换
+			强转的格式 : 目标类型 变量 = (目标类型)(被转换的数据);
+				缺点 : 1 数据丢失  2 损失精读
+			
+			byte b1 = 10;
+			int i = 20;
+			
+			byte b2 = (byte)(b1 + i);
+			
+			byte b3 = (byte)i;
+
+17 独立编写测试强制类型转换的案例
